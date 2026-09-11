@@ -1,0 +1,274 @@
+/* =========================================
+   RESET
+========================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+/* =========================================
+   BODY
+========================================= */
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#e9e5de;
+    color:#292722;
+    font-size:14px;
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.container{
+    width:92%;
+    max-width:1150px;
+    margin:45px auto;
+    background:#fdfcf9;
+    border:1px solid #d6d1c8;
+    padding:32px;
+    border-radius:2px;
+    box-shadow:10px 10px 0 #d3cec5;
+}
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.title{
+    margin-bottom:30px;
+    padding:0 0 20px;
+    border-bottom:2px solid #292722;
+}
+
+.title h2{
+    font-size:26px;
+    font-weight:700;
+    color:#292722;
+    letter-spacing:-0.5px;
+}
+
+.title small{
+    display:block;
+    margin-top:8px;
+    color:#817c73;
+    font-size:13px;
+}
+
+
+/* =========================================
+   FORM TABLE
+========================================= */
+
+.form-table{
+    width:100%;
+    border-collapse:collapse;
+    margin-bottom:35px;
+}
+
+.form-table tr{
+    border-bottom:1px solid #e4dfd7;
+}
+
+.form-table td{
+    padding:14px 8px;
+    vertical-align:middle;
+}
+
+.form-table td:first-child{
+    width:190px;
+    padding-left:0;
+    font-weight:bold;
+    color:#5c574f;
+}
+
+
+/* =========================================
+   INPUT & SELECT
+========================================= */
+
+input,
+select{
+    width:100%;
+    padding:11px 12px;
+    border:1px solid #c9c3ba;
+    border-radius:2px;
+    background:#ffffff;
+    color:#292722;
+    font-size:14px;
+    transition:all 0.2s ease;
+}
+
+input:hover,
+select:hover{
+    border-color:#777168;
+}
+
+input:focus,
+select:focus{
+    outline:none;
+    border-color:#292722;
+    background:#fffdf8;
+    box-shadow:inset 3px 0 0 #292722;
+}
+
+
+/* =========================================
+   READONLY
+========================================= */
+
+.readonly{
+    background:#eeebe5;
+    color:#777168;
+}
+
+
+/* =========================================
+   TABLE ABSENSI
+========================================= */
+
+.table-absensi{
+    width:100%;
+    border-collapse:collapse;
+    border:2px solid #292722;
+}
+
+
+/* =========================================
+   TABLE HEADER
+========================================= */
+
+.table-absensi th{
+    background:#292722;
+    color:#fdfcf9;
+    border:1px solid #49453e;
+    padding:13px 10px;
+    font-size:12px;
+    font-weight:bold;
+    text-transform:uppercase;
+    letter-spacing:0.6px;
+    text-align:center;
+}
+
+
+/* =========================================
+   TABLE BODY
+========================================= */
+
+.table-absensi td{
+    border:1px solid #d8d2c9;
+    padding:12px 10px;
+    background:#fdfcf9;
+    color:#3d3933;
+}
+
+.table-absensi td:first-child{
+    text-align:center;
+    color:#817c73;
+}
+
+.table-absensi td:nth-child(2){
+    font-weight:bold;
+    color:#292722;
+}
+
+
+/* =========================================
+   TABLE ZEBRA
+========================================= */
+
+.table-absensi tbody tr:nth-child(even) td{
+    background:#f5f2ec;
+}
+
+
+/* =========================================
+   TABLE HOVER
+========================================= */
+
+.table-absensi tbody tr:hover td{
+    background:#ebe6dd;
+}
+
+
+/* =========================================
+   STATUS
+========================================= */
+
+.status{
+    width:100%;
+    padding:7px 8px;
+    border:1px solid #bdb7ae;
+    border-radius:2px;
+    background:#ffffff;
+    color:#292722;
+    font-size:13px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:all 0.2s ease;
+}
+
+.status:hover{
+    background:#292722;
+    color:#ffffff;
+    border-color:#292722;
+}
+
+.status:focus{
+    outline:none;
+    border-color:#292722;
+    box-shadow:0 0 0 2px #c9c3ba;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media screen and (max-width:768px){
+
+    .container{
+        width:94%;
+        margin:25px auto;
+        padding:22px;
+        box-shadow:6px 6px 0 #d3cec5;
+    }
+
+    .title h2{
+        font-size:22px;
+    }
+
+    .form-table,
+    .form-table tbody,
+    .form-table tr,
+    .form-table td{
+        display:block;
+        width:100%;
+    }
+
+    .form-table tr{
+        padding:8px 0;
+    }
+
+    .form-table td{
+        padding:5px 0;
+    }
+
+    .form-table td:first-child{
+        width:100%;
+        padding-bottom:3px;
+    }
+
+    .table-absensi{
+        display:block;
+        overflow-x:auto;
+        white-space:nowrap;
+    }
+
+}
